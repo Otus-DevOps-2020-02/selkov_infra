@@ -3,8 +3,8 @@ selkov Infra repository
 
 # Домашняя работа 4
 ## Данные для подключения
-- testapp_IP = 35.246.164.237
-- testapp_port = 9292
+testapp_IP = 35.246.164.237
+testapp_port = 9292
 
 ## Проверка работы
 http://35.246.164.237:9292
