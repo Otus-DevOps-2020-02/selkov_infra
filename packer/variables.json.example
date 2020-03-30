@@ -1,0 +1,8 @@
+{
+    "project_id": "gcp-infra-123456",
+    "zone": "europe-west1-b",
+    "machine_type": "f1-micro",
+    "image_family": "base",
+    "source_image_family": "os",
+    "ssh_username": "user"
+}
