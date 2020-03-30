@@ -10,19 +10,19 @@ testapp_port = 9292
 http://35.242.237.27:9292
 
 - Создан Packer template и параметризирован
-[ubuntu16.json](/Otus-DevOps-2020-02/selkov_infra/blob/packer-base/packer/ubuntu16.json)
+[ubuntu16.json](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/packer-base/packer/ubuntu16.json)
 -  Определены пользовательские переменные в отдельный файл
-[variables.json.example](/Otus-DevOps-2020-02/selkov_infra/blob/packer-base/packer/variables.json.example)
+[variables.json.example](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/packer-base/packer/variables.json.example)
 
 ## Дополнительное задание 1
 “Запечены” (bake) в image VM все зависимости приложения и сам код приложения
-- Шаблон, в котором два скрипта: [immutable.json](/Otus-DevOps-2020-02/selkov_infra/blob/packer-base/packer/immutable.json)
-- Скрипт установки и запуска, с использованием systemd для управление юнитом, для запуска кода приложения: [startup_script.sh](/Otus-DevOps-2020-02/selkov_infra/blob/packer-base/packer/files/startup_script.sh)
-- Сервис юнит-файл: [reddit.service](/Otus-DevOps-2020-02/selkov_infra/blob/packer-base/packer/files/reddit.service)
+- Шаблон, в котором два скрипта: [immutable.json](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/packer-base/packer/immutable.json)
+- Скрипт установки и запуска, с использованием systemd для управление юнитом, для запуска кода приложения: [startup_script.sh](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/packer-base/packer/files/startup_script.sh)
+- Сервис юнит-файл: [reddit.service](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/packer-base/packer/files/reddit.service)
 
 ## Дополнительное задание 2
 Создан shell-скрипт для создания VM из собранного образа:
-[create-redditvm.sh](/Otus-DevOps-2020-02/selkov_infra/blob/packer-base/config-scripts/create-redditvm.sh)
+[create-redditvm.sh](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/packer-base/config-scripts/create-redditvm.sh)
 
 
 # Домашняя работа 4
