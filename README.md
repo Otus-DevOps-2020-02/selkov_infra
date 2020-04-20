@@ -1,6 +1,36 @@
 # selkov_infra
 selkov Infra repository
 
+# Домашняя работа 6
+## Данные для подключения
+testapp_IP = 34.96.87.83
+testapp_port = 80
+
+## Проверка работы
+http://34.96.87.83
+
+- Запуск VM при помощи terraform
+[main.tf](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/terraform-1/terraform/main.tf)
+- Выходные переменные
+[outputs.tf](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/terraform-1/terraform/outputs.tf)
+- Добавление провижинеров
+[puma.service](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/terraform-1/terraform/files/puma.service)
+[deploy.sh](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/terraform-1/terraform/files/deploy.sh)
+- Параметризирование конфигурационных файлов
+[variables.tf](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/terraform-1/terraform/variables.tf)
+- Определение переменных
+[terraform.tfvars](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/terraform-1/terraform/terraform.tfvars.example)
+
+## Задание со*
+- Добавлены SSH-ключи для пользователей appuser1 и appuser2
+- При terraform apply, ключи, созданные через панель удаляются
+
+## Задание с **
+- HTTP Load Balancer
+[lb.tf](https://github.com/Otus-DevOps-2020-02/selkov_infra/blob/terraform-1/terraform/lb.tf)
+- Проблема в том, что созданная конфигурация - два разных приложения с двумя отдельными БД
+
+
 # Домашняя работа 5
 ## Данные для подключения
 testapp_IP = 35.242.237.27
